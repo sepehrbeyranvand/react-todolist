@@ -1,0 +1,41 @@
+{
+    "root":[
+      
+        {
+          "isActive": true,
+          "balance": "$60,415",
+          "age": 40,
+          "eyeColor": "brown",
+          "name": "Garrett Donaldson"
+        },
+        {
+          "isActive": true,
+          "balance": "$221,578",
+          "age": 35,
+          "eyeColor": "blue",
+          "name": "Oconnor Miles"
+        },
+        {
+          "isActive": false,
+          "balance": "$958,059",
+          "age": 39,
+          "eyeColor": "blue",
+          "name": "Sheena Harris"
+        },
+        {
+          "isActive": true,
+          "balance": "$955,816",
+          "age": 29,
+          "eyeColor": "green",
+          "name": "Summer Strong"
+        },
+        {
+          "isActive": false,
+          "balance": "$667,297",
+          "age": 22,
+          "eyeColor": "brown",
+          "name": "Wolfe Schneider"
+        }
+          
+    ]
+}

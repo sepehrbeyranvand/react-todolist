@@ -1,0 +1,7 @@
+body{
+    overflow-x: hidden;
+    background-color:rgb(247, 240, 228);
+}
+textarea{
+    resize: none;
+}
