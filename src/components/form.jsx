@@ -63,12 +63,19 @@ export default function Form() {
           />
         </div>
         <div className="flex flex-col">
-          <label>Color</label>
+          <div className="flex items-center gap-x-2">
+            <label>Color</label>
+            <i
+              id="popOver"
+              title="Here you can choose the background of your task card:)"
+              className="fa fa-info-circle cursor-pointer"
+            ></i>
+          </div>
           <input
             className="outline-none w-full"
             type="color"
             name=""
-            id=""
+            id="color"
             value={color}
             onChange={(e) => setColor(e.target.value)}
           />
