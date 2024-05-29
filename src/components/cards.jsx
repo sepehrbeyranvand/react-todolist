@@ -34,7 +34,11 @@ export default function Cards() {
     Notify.failure("Your Task Deleted!");
   };
   if (loading) {
-    return <div className="text-center flex justify-center text-5xl items-center min-h-screen"><i className="fa fa-life-saver animate-spin text-5xl text-teal-500"></i></div>;
+    return (
+      <div className="text-center flex justify-center text-5xl items-center min-h-screen">
+        <i className="fa fa-life-saver animate-spin text-5xl text-teal-500"></i>
+      </div>
+    );
   }
 
   return (
@@ -52,18 +56,18 @@ export default function Cards() {
               <h1 className="text-xl font-bold">{e.title}</h1>
               <hr className="w-[50%] bg-white" />
               <p>{e.description}</p>
-              <p>{e.deadLine}</p>
+              <p>DeadLine: {e.deadLine}</p>
             </div>
             <div className="basis-1/5 flex flex-col">
               <button
                 onClick={() => rmItem(e.id)}
-                className="text-white bg-red-600 p-2 w-[50%] self-end rounded-lg my-2 transition .4s ease-in-out duration-200 hover:bg-red-700"
+                className="text-white bg-red-600 p-2 lg:w-[50%] sm:w-[20%] self-end rounded-lg my-2 transition .4s ease-in-out duration-200 hover:bg-red-700"
               >
                 Remove
               </button>
-              <button className="text-white bg-green-600 p-2 w-[50%] self-end rounded-lg my-2 transition .4s ease-in-out duration-200 hover:bg-green-700">
+              {/* <button className="text-white bg-green-600 p-2 w-[50%] self-end rounded-lg my-2 transition .4s ease-in-out duration-200 hover:bg-green-700">
                 Done
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
